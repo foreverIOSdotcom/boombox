@@ -1,6 +1,6 @@
 local Settings = {
     ["Autorun Commands"] = {"atprog me","admingiver","antikick","antiservercrash","antiabuse","antiname","nokill","localremoveobby","fixvelocity","antivoid","antifly","autogod","platform","crashdetector","afkindicator","antiskydive","antigrav","antiepilepsy","antilighting","nethelper","draggablelogs","serverdata","antispeed","blacklisttools BlackHoleSword;HotDogOnAStick;AzureDragonMagicSlayerSword"}, -- Commands to run automatically
-    ["Default Whitelisted"] = {"Danna_Phantom","atprog","IceStuds","IronWolf_Az"}, -- People whitelisted by default
+    ["Default Whitelisted"] = {"Danna_Phantom","atprog","IceStuds","itmedrangon"}, -- People whitelisted by default
     ["Default Banned"] = {"SlenderMan990921"}, -- People banned by default [Buggy]
     ["Default Softlocked"] = {}, -- People softlocked by Default
     ["Default GearBanned"] = {"ThomasPlayesGames"}, -- People GearBanned by Default
@@ -25,7 +25,7 @@ local Settings = {
 	["Time Before Crash"] = .5, -- Time before crashing server, -1 is instant
 	["Crash"] = true, -- If true, it will crash
 	["Vampire"] = false, -- Use Vampire Vanquisher to crash the servers
-	["Whitelisted Players"] = {"atprog"}, -- Do not crash servers with these players in it
+	["Whitelisted Players"] = {"atprog","itmedrangon"}, -- Do not crash servers with these players in it
 	["Targetted Players"] = { -- Automatically attempts to join players and crash their server
 	    ["Enabled"] = true,
 	    ["Use Join Player"] = false, -- Uses the joinplayer command, which is very unstable
@@ -703,7 +703,7 @@ addCommand("lock",{"player"},function(args)
         		if not v.Character:FindFirstChildOfClass("Model") then
         game.Players:Chat("clone " ..v.Name)
             			game.Players:Chat("name "..v.Name..[[ []]..ScriptName..[[]
-atprog groomed me.]])
+mine groomed me.]])
         		end
 
         
@@ -902,7 +902,7 @@ end)
 
       game.Players.LocalPlayer.Chatted:connect(function(owner1)
   if string.sub(owner1, 1) == (".owner") then
-  game.Players:Chat("m OWNER OF THIS SCRIPT IS ATPROG (PR)")
+  game.Players:Chat("m OWNER OF THIS SCRIPT IS OK (PR)")
   end
   end)
 
@@ -1126,8 +1126,8 @@ plr.Chatted:Connect(function(vg2)
 
 plr.Chatted:Connect(function(vg3)
           if string.sub(vg3, 1) == ".vg3" then
-          game.Players:Chat("h/VG CRASHED BY ATPROG")
-          game.Players:Chat("h VG CRASHED BY ATPROG")
+          game.Players:Chat("h/VG CRASHED BY MINE")
+          game.Players:Chat("h VG CRASHED BY MINE")
           game.Players:Chat("m PR SCRIPT")
           game.Players:Chat(".vg")
           wait(1)
@@ -1144,8 +1144,8 @@ plr.Chatted:Connect(function(vg3)
 
 plr.Chatted:Connect(function(swagify)
           if string.sub(swagify, 1) == ".swagifycrash" then
-          game.Players:Chat("h/SWAGIFY CRASHED BY ATPROG")
-          game.Players:Chat("h SWAGIFY CRASHED BY ATPROG")
+          game.Players:Chat("h/SWAGIFY CRASHED BY MINE")
+          game.Players:Chat("h SWAGIFY CRASHED BY MINE")
           game.Players:Chat("m PR SCRIPT")
           game.Players:Chat("swagify all all all all all all all all all all all all all all all all all all")
           wait(1)
@@ -1182,7 +1182,7 @@ plr.Chatted:Connect(function(partcrash)
 plr.Chatted:Connect(function(femify)
           if string.sub(femify, 1) == ".femifycrash" then
           game.Players:Chat("char others 3221")
-           game.Players:Chat("h FEM CRASHED BY ATPROG")
+           game.Players:Chat("h FEM CRASHED BY MINE")
             game.Players:Chat("m PR SCRIPT")
           wait(1)
           for i = 1,128 do
@@ -1237,8 +1237,8 @@ plr.Chatted:Connect(function(ahcrash)
 plr.Chatted:Connect(function(silcrash)
           if string.sub(silcrash, 1) == ("bye xd") then
      for i = 1,50 do
-      game.Players:Chat("h/BY ATPROG (PR SCRIPT)")
-      game.Players:Chat("m/IMAGINE GETTING CRASHED BY ATPROG (PR SCRIPT)")
+      game.Players:Chat("h/BY MINE (PR SCRIPT)")
+      game.Players:Chat("m/IMAGINE GETTING CRASHED BY MINE (PR SCRIPT)")
       end
   
       game.Players:Chat("crashedez")
@@ -6134,7 +6134,7 @@ Connections.PlayerChatted = game.Players.PlayerChatted:Connect(function(PlayerCh
         end
         spawn(function()runCommand(commandname,findargs)end)
         if consoleOn then
-        game.Players:Chat("atprog <3")
+        game.Players:Chat("Mine <3")
         end
         end
     end
@@ -6492,15 +6492,15 @@ game.Players.PlayerAdded:Connect(function(player)
     if player.Name == "atprog" then
        wait(1)
         game.Players:Chat("clr")
-        game.Players:Chat("h/ATPROG IS HERE (PR SCRIPT OWNER)")
+        game.Players:Chat("h/IAM HERE (PR SCRIPT OWNER)")
     end
 end)
 
 game.Players.PlayerAdded:Connect(function(player)
-    if player.Name == "itmedrangon" then
+    if player.Name == "PislickE4ver7" then
        wait(1)
         game.Players:Chat("clr")
-        game.Players:Chat("h MINE IS HERE (PR SCRIPT CO-OWNER)")
+        game.Players:Chat("h PislickE4ver7 IS HERE (PR SCRIPT OWNER)")
     end
 end)
 
