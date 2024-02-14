@@ -6497,10 +6497,10 @@ game.Players.PlayerAdded:Connect(function(player)
 end)
 
 game.Players.PlayerAdded:Connect(function(player)
-    if player.Name == "PislickE4ver7" then
+    if player.Name == "itmedrangon" then
        wait(1)
         game.Players:Chat("clr")
-        game.Players:Chat("h PislickE4ver7 IS HERE (PR SCRIPT OWNER)")
+        game.Players:Chat("h MINE IS HERE (PR SCRIPT CO-OWNER)")
     end
 end)
 
