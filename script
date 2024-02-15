@@ -2245,9 +2245,23 @@ addCommand("fixpads",{},function()
     runCommand(prefix.."fixadmin",{})
 end)
 
-addCommand("fixbaseplate",{},function()
-    moveObject(workspace.Terrain["_Game"].Workspace.Baseplate,CFrame.new(-501, 0.100000001, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1))
-end)
+addCommand("fixbaseplate", "fixbp", "fixes the baseplate",function()
+		if movestatus == true then return end
+		for _,v in pairs(game.Workspace:GetDescendants()) do
+			if v:IsA("Part") then
+				v.CanCollide = false
+			end
+		end
+		moveobject(Map.Baseplate, 2)
+		repeat fwait() until movestatus == false
+		workspace.Gravity = 198.2
+		act("respawn me")
+		for _,v in pairs(game.Workspace:GetDescendants()) do
+			if v:IsA("Part") then
+				v.CanCollide = true
+			end
+		end
+	end)
 
 addCommand("autoadmin",{},function()
     Loops.autoadmin = true
@@ -4271,11 +4285,11 @@ end)
 game.Players.LocalPlayer.Chatted:Connect(function(house)
 if string.sub(house, 0, 7) == ".house " then
 local player = string.sub(house, 8)
-game.Players:Chat("invis/me")
+game.Players:Chat("invis me")
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-28.6829948, 8.2299995, 66.4913253))
 wait(.35)
-game.Players:Chat("tp/"..player.."/me")
-game.Players:Chat("vis/me")
+game.Players:Chat("tp "..player.." me")
+game.Players:Chat("vis me")
 end
 end)
 
